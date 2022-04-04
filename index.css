@@ -97,30 +97,42 @@ img:hover {
     color: white;
 }
 
+@media(max-width: 1024px) {
+    .imagens {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        justify-content: space-between;
+    }
+}
 
-/* @media(max-width: 426px){
+@media(max-width: 768px) {
+    .imagens {
+        display: flex;
+        justify-content: center;
+        justify-content: space-evenly;
+    }
+}
+
+@media(max-width: 426px){
         
-    h1 {
+    .titulo{
         display: none;
     }
-
-    .titulo {
-        display: none;
-    }
-    
 
     .navegacao {
         display: flex;
-        padding: 30px;
         flex-direction: column;
+        justify-content: center;
         align-items: center;
-        font-size: 18px;
+        font-size: 20px;
         width: 100%;
-
+        
     }
 
-    a{
-        display: flex;
-        padding: 3px;
+    header {
+        height: 90px;
     }
-} */
+
+}
+
